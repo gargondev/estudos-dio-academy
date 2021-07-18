@@ -22,3 +22,10 @@ Bytecode é um formato de código intermediário entre o código fonte, o texto 
 Na plataforma [Java](https://www.dca.fee.unicamp.br/cursos/PooJava/javaenv/bytecode.htmlhttps:/), o bytecode é interpretado por uma máquina virtual Java (JVM).
 
 A grande vantagem do Java é rodar o código em qualquer sistema operacional.
+
+#### Aula 4 - Java Características da linguagem.
+
+Classes
+Toda Classe deve Iniciar com nome em maiúsculo.
+
+
