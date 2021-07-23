@@ -1,0 +1,115 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+    --pretoGradiente:#1414141a;
+    --amazonWellow:#e47911;
+    --amazonWhite:#ffe8d8;
+}
+
+ /*##################### Elementos Base##################### */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--amazonWellow);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box; 
+    color: wheat;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-size: 40px;
+    color: var(--preto);
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--amazonWhite);
+    border-left: 20px;
+    padding: 10px;
+}
+
+header nav a:hover{
+    color: var(--preto);
+ }
+
+ /*##################### Elementos Filme Principal ##################### */
+
+ .filme_principal{
+     font-size: 16px;
+     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../public/img/capaPrincipal.jpg");
+     height: 500px;
+     background-size: cover;
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items: flex-start;
+     
+
+ }
+
+ .filme_principal .container{
+    margin-left: 2%;
+ }
+
+ .filme_principal .descricao{
+     margin-bottom: 40px;
+     width: 50%;
+ }
+
+
+ .titulo {
+     font-size: 40px;
+ }
+
+
+ .botao{
+    
+    background-color: rgba(0,0,0,.50);
+    color: var(--amazonWhite);
+
+    margin-top: 1%;
+    border-radius: 10%;
+    border: none;
+    padding: 16px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+
+    transition-property: color;
+    transition: 1s;
+    
+ }
+
+ .botao:hover{
+     background-color: var(--amazonWhite);
+     color: var(--preto);
+ }
+
+ .botao i {
+     margin-right: 5px;
+ }
+
+
+.splide__slide{
+    cursor: pointer;
+    display: flex;
+    
+    width: 400px;
+    height: 350px;
+}
+
+.splide{
+    margin-left: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

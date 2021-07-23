@@ -28,4 +28,52 @@ A grande vantagem do Java é rodar o código em qualquer sistema operacional.
 Classes
 Toda Classe deve Iniciar com nome em maiúsculo.
 
+Tipagem
 
+Java linhaguem com tipagem forte.
+Tipos primitivos são 8.
+Tabela com tipos primitivos.
+[Open Image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191105122725/Primitive-Data-Types-in-Java-4.jpg)
+
+Default Values
+
+
+| Data Type              | Default Value |
+| ------------------------ | --------------- |
+| byte                   | 0             |
+| short                  | 0             |
+| int                    | 0             |
+| long                   | 0L            |
+| float                  | 0.0f          |
+| double                 | 0.0d          |
+| char                   | '\u0000'      |
+| String (or any object) | null          |
+| boolean                | false         |
+
+Wrappers - Class
+Objetos que representam os tipos em Java.
+
+Open Table.
+
+[W3S](https://www.w3schools.com/java/java_wrapper_classes.asp)
+
+
+| Data Type |
+| :---------- |
+| Byte      |
+| Short     |
+| Integer   |
+| Long      |
+| Float     |
+| Double    |
+| Character |
+| Boolean   |
+
+Modificadores de Acesso.
+
+Tablela de Modificadores - [Acessar](https://www.geeksforgeeks.org/access-modifiers-java/)
+
+1. Default – No keyword required
+2. Private
+3. Protected
+4. Public

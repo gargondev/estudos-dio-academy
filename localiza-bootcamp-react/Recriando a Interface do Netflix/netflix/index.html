@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style/normalize.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">
+                NETFLIX
+            </h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="filme_principal">
+            <div class="container">
+                <h3 class="titulo">O Último Reino</h3>
+                <p class="descricao">Eduardo e Aethelflaed discutem o futuro de Mércia e o sonho do pai de uma Inglaterra unida. Uhtred tenta recuperar o que é seu por direito.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play-circle"></i> Assistir
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i> Mais Informações
+                    </button>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"  ><img clas="box-filme"src="./style/img/min1.jpg" alt=""></li>
+                <li class="splide__slide" ><img clas="box-filme"src="./style/img/min2.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min3.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min4.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min5.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min6.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min7.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min8.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min9.jpg" alt=""></li>
+                <li class="splide__slide"><img clas="box-filme"src="./style/img/min10.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4e7c06cac9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        
+        
+
+        new Splide( '.splide', {
+	type   : 'loop',
+	padding: {
+		right: '20rem',
+		left : '0',
+	},
+    autoWidth: true,
+	focus    : 'lefth',
+    perPage  : 5,
+	trimSpace: false,
+} ).mount();
+
+    </script>
+
+</body>
+</html>
