@@ -1,14 +1,13 @@
 :root{
     --vermelho:#e50914;
-    --preto:#141414;
-    --amazonWellow:#e47911;
+    --black:#141414;
+    --blue:#001f80;
+    --blue-text:#dad5ea;
+    --gold:#b8860b;
+    --yellow:#e47911;
     --amazonWhite:#fafad2;
 
-    --primary-logo: var(--preto);
-    --primary-background: var(--amazonWellow);
-    --primary-color: var(--amazonWhite);
-    --primary-text: var(--amazonWhite);
-    --primary-text-hover: var(--preto);
+ 
 }
 
  /*##################### Elementos Base##################### */
@@ -21,7 +20,7 @@ body{
     background-color: var(--primary-background);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box; 
-    color: var(--primary-body-color);
+    background-color: var(--black);
 }
 
 header .container{
@@ -33,19 +32,51 @@ header .container{
 
 header .logo{
     font-size: 40px;
-    color: var(--primary-logo);
+    color: var(--vermelho);
 }
 
-header nav a{
+ a{
     text-decoration: none;
-    color: var(--primary-text);
+    color: var(--gold);
     border-left: 20px;
     padding: 10px;
 }
 
-header nav a:hover{
-    color: var(--primary-text-hover);
- }
+
+
+.button-top{
+    border: 1px outset;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    
+}
+
+.nav-shadow{
+    border: none;
+    clear: both;
+    /* box-shadow: 5px 10px 8px #888888; */
+    border-radius: 5%;
+    background-color: rgba(205,217,255,.30);
+    
+}
+
+.nav-shadow .yellow{
+    background-color: var(--yellow);
+}
+
+.nav-shadow .black{
+    background-color: var(--black);
+}
+
+.nav-shadow .blue{
+    background-color: var(--blue);
+}
+
 
  /*##################### Elementos Filme Principal ##################### */
 
@@ -79,7 +110,7 @@ header nav a:hover{
  }
 
  main {
-     color: var(--primary-text);
+     color: var(--blue-text);
 
  }
 
@@ -162,7 +193,7 @@ header nav a:hover{
     
     .botao {
         width: 200px;
-        display:flexbox;
+        display:flex;
     }
     
 }
