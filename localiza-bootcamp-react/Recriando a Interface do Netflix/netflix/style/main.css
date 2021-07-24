@@ -1,9 +1,14 @@
 :root{
     --vermelho:#e50914;
     --preto:#141414;
-    --pretoGradiente:#1414141a;
     --amazonWellow:#e47911;
-    --amazonWhite:#ffe8d8;
+    --amazonWhite:#fafad2;
+
+    --primary-logo: var(--preto);
+    --primary-background: var(--amazonWellow);
+    --primary-color: var(--amazonWhite);
+    --primary-text: var(--amazonWhite);
+    --primary-text-hover: var(--preto);
 }
 
  /*##################### Elementos Base##################### */
@@ -13,10 +18,10 @@
 }
 
 body{
-    background-color: var(--amazonWellow);
+    background-color: var(--primary-background);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box; 
-    color: wheat;
+    color: var(--primary-body-color);
 }
 
 header .container{
@@ -28,18 +33,18 @@ header .container{
 
 header .logo{
     font-size: 40px;
-    color: var(--preto);
+    color: var(--primary-logo);
 }
 
 header nav a{
     text-decoration: none;
-    color: var(--amazonWhite);
+    color: var(--primary-text);
     border-left: 20px;
     padding: 10px;
 }
 
 header nav a:hover{
-    color: var(--preto);
+    color: var(--primary-text-hover);
  }
 
  /*##################### Elementos Filme Principal ##################### */
@@ -48,11 +53,16 @@ header nav a:hover{
      font-size: 16px;
      background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../public/img/capaPrincipal.jpg");
      height: 500px;
+     max-height: 500px;
+     width: 100%;
+
      background-size: cover;
      display: flex;
      flex-direction:column;
      justify-content: center;
-     align-items: flex-start;
+     align-items: center;
+     border-radius: 2%;
+     
      
 
  }
@@ -62,8 +72,15 @@ header nav a:hover{
  }
 
  .filme_principal .descricao{
+    
      margin-bottom: 40px;
      width: 50%;
+     
+ }
+
+ main {
+     color: var(--primary-text);
+
  }
 
 
@@ -75,7 +92,7 @@ header nav a:hover{
  .botao{
     
     background-color: rgba(0,0,0,.50);
-    color: var(--amazonWhite);
+    color: var(--primary-text);
 
     margin-top: 1%;
     border-radius: 10%;
@@ -91,25 +108,61 @@ header nav a:hover{
  }
 
  .botao:hover{
-     background-color: var(--amazonWhite);
-     color: var(--preto);
+     background-color: var(--primary-text);
+     color: var(--primary-text-hover);
  }
 
  .botao i {
      margin-right: 5px;
  }
 
-
+ /*##################### Elementos Filmes Carrosel ##################### */
 .splide__slide{
     cursor: pointer;
     display: flex;
-    
     width: 400px;
     height: 350px;
+    
+}
+
+.splide__slide img{
+    border-radius: 5%;
 }
 
 .splide{
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 5%;
     margin-bottom: 5%;
+    
+}
+
+/*##################### Media Query##################### */
+
+@media screen and (max-width:700px) {
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .filme_principal{
+        display: block  ;
+        height: 300px;
+        max-height: 400px;
+    }
+
+    .container .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .botao {
+        width: 200px;
+        display:flexbox;
+    }
+    
 }
