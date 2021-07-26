@@ -1,7 +1,7 @@
 :root{
     --vermelho:#e50914;
-    --black:#141414;
-    --blue:#001f80;
+    --black:#0E0F16;
+    --blue:#3467C2;
     --blue-text:#dad5ea;
     --gold:#b8860b;
     --yellow:#e47911;
@@ -154,6 +154,7 @@ header .logo{
     width: 400px;
     height: 350px;
     
+    
 }
 
 .splide__slide img{
@@ -161,6 +162,7 @@ header .logo{
 }
 
 .splide{
+    
     margin-left: 10px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -169,8 +171,15 @@ header .logo{
 
 /*##################### Media Query##################### */
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:810px) {
 
+    
+    .splide{
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 15%;
+    }
+    
     header .container{
         display: flex;
         flex-direction: column;
@@ -182,6 +191,15 @@ header .logo{
         display: block  ;
         height: 300px;
         max-height: 400px;
+        
+    }
+
+    .titulo{ 
+        margin-left: 5%;
+    }
+
+    .descricao{
+        margin-left: 5%;
     }
 
     .container .botoes {

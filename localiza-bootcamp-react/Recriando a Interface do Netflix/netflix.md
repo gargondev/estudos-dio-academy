@@ -1,11 +1,7 @@
-#### Clone Netflix Propriedades Importantes sobre CSS :clapper: :movie_camera:
+### Clone Netflix Projeto para o Bootcamp React Dio Academy :clapper: :movie_camera:
 
-> [box-sizing](https://developer.mozilla.org/pt-BR/docs/Web/CSS/box-sizinghttps:/)
+Este projeto teve por objetivo o estudo de propriedades de alinhamento dos elementos html utilizando um pouco de responsividade.
 
-> [Wrapper em CSS](https://cursos.alura.com.br/forum/topico-o-que-seria-a-class-wrapper-75547https:/) - Definição do Termo
+Outro tema abordado foi a utilização do plugin [splider](https://splidejs.com/https:/) js para o carrosseu no html.
 
-> [display-flex](https://www.w3schools.com/css/css3_flexbox_items.asp) - Utilização da Propriedade
->
-> Por defualt flex-direction é row, alinha os elementos em linha.
-
-> [padding](https://www.w3schools.com/css/css_padding.asp) - Espaço interno dos elementos
+Demonstração do resultado publicação no [Linkedin](https://www.linkedin.com/posts/heliezer-garcia_javascript-react-developer-activity-6825241034969153536-8NVChttps:/).
